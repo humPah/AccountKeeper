@@ -1,11 +1,16 @@
-<div class="center hero-unit">
-    <h1>Welcome to Account Keeper's Web Page</h1>
+<% if signed_in? %>
+	<div class="center hero-unit">
+		<h1>Welcome<h1>
+	</div>
+<% else %>
+	<div class="center hero-unit">
+    	<h1>Welcome to Account Keeper's Web Page</h1>
 
-    <h2>
-      Web application allowing you to keep track of your bank account
-    </h2>
-    <a href="#" class="btn btn-large btn-primary">Sign in</a>
-    <a href="signup" class="btn btn-large btn-primary">Sign up</a>                                    
-</div>
-
+    	<h2>
+      		Web application allowing you to keep track of your bank account
+    	</h2>
+    	<a href="signin" class="btn btn-large btn-primary">Sign in</a>
+    	<a href="signup" class="btn btn-large btn-primary">Sign up</a>                                    
+	</div>
+<% end %> 
   
